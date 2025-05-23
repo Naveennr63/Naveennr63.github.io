@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #232526, #414345);
+  color: #f0f0f0;
+  line-height: 1.6;
+}
+header {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #1f1f1f;
+  color: #fff;
+}
+header nav {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: #2e2e2e;
+  padding: 1rem;
+}
+header nav a {
+  color: #f0f0f0;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+header nav a:hover {
+  color: #00adb5;
+}
+section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: auto;
+}
+section h2 {
+  font-size: 2rem;
+  color: #00adb5;
+  margin-bottom: 1rem;
+}
+ul {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+ul li {
+  background: #393e46;
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+ul li:hover {
+  transform: scale(1.05);
+}
+.project-card {
+  background: #393e46;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-5px);
+}
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #1f1f1f;
+  font-size: 0.9rem;
+  color: #888;
+}
+/* Base nav styles */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
+  background: #2e2e2e;
+}
+
+/* Make text wrap and stack on small screens */
+@media (max-width: 768px) {
+  nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    padding: 0.5rem;
+    overflow: hidden; /* Prevent overflow */
+  }
+
+  nav a {
+    flex: 1; /* Each link takes equal space */
+    text-align: center;
+    padding: 0.4rem 0.2rem;
+    font-size: 0.7rem; /* Smaller font for mobile */
+    white-space: nowrap;
+  }
+}
+
+
+
+
+
